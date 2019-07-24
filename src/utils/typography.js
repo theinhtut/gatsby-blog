@@ -1,5 +1,7 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
+import '../fonts/pyidaungsu.css'
+import './global.css'
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
@@ -8,6 +10,7 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     'body': {
       background: '#292929'
+      // bodyFontFamily: ['georgia']
     },
     'p, h1, small, footer': {
       color: '#e7eae6'
