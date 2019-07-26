@@ -2,6 +2,7 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 import '../fonts/pyidaungsu.css'
 import './global.css'
+import './prism.css'
 
 Wordpress2016.overrideThemeStyles = () => {
   return {

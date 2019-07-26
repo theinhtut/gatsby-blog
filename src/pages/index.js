@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
+// import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -35,6 +36,10 @@ class BlogIndex extends React.Component {
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
+              {/* <small>{node.frontmatter.anotherText}</small> */}
+              {/* <img src='https://support.squarespace.com/hc/en-us/article_attachments/211043968/index-page-banner.png' /> */}
+              {/* <img src={node.frontmatter.image} /> */}
+              {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
             </div>
           )
         })}
