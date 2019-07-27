@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-// import Img from 'gatsby-image'
+import Image from 'gatsby-image'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -36,9 +36,20 @@ class BlogIndex extends React.Component {
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
-              {/* <small>{node.frontmatter.anotherText}</small> */}
-              {/* <img src='https://support.squarespace.com/hc/en-us/article_attachments/211043968/index-page-banner.png' /> */}
-              {/* <img src={node.frontmatter.image} /> */}
+              {/* <small>{node.frontmatter.imgURL}</small> */}
+              {/* <img src={node.frontmatter.imgURL.childImageSharp.sizes} /> */}
+              <Image
+              sizes={node.frontmatter.imgURL.childImageSharp.sizes}
+              style={{
+                // marginRight: rhythm(1 / 2),
+                marginBottom: 50,
+                minWidth: 50,
+                height: 250
+              }}
+              imgStyle={{
+                
+              }}
+              />
               {/* <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} /> */}
             </div>
           )
@@ -68,6 +79,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            imgURL {
+              childImageSharp{
+                  sizes(maxWidth: 630) {
+                      ...GatsbyImageSharpSizes
+                  }
+              }
+          }
           }
         }
       }

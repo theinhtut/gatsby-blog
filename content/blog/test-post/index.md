@@ -2,8 +2,8 @@
 title: မြန်မာလိုးရေရအောင်
 date: "2019-07-20T22:40:32.169Z"
 description: တွေးမိတွေးရာလေးတွေ 🥙
-featuredImage: "./blade.jpg"
-anotherText: random again
+# imgURL: https://wallpapercave.com/wp/wp2203658.jpg
+imgURL: "./blade.jpg"
 ---
 
 ဒါမျိုးလေးတွေကို ရေးချင်နေတာ
