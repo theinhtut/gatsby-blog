@@ -1,6 +1,32 @@
 body {
   /* font-family: 'Pyidaungsu' */
+  /* background: #292929; */
 }
+.dark {
+  background: #292929;
+  color: #e7eae6;
+  transition: all 0.6s ease;
+}
+.dark a {
+  color: #03f193;
+}
+/* .dark p h1 small footer {
+  color: #e7eae6;
+} */
+.light {
+  background: white;
+  color: #292929;
+  transition: all 0.6s ease;
+}
+.light a {
+  /* color: #f89015; */
+  color: #36BC99;
+  /* color: #cf6679; */
+  /* color: black; */
+}
+/* .light p h1 small footer {
+  color: #292929;
+} */
 
 /* .gatsby-highlight-code-line {
   background-color: hsla(207, 95%, 15%, 1);

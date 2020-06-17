@@ -10,16 +10,17 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     'body': {
-      background: '#292929'
+      // background: '#292929'
+      // background: '#a9a939'
       // bodyFontFamily: ['georgia']
     },
-    'p, h1, small, footer': {
-      color: '#e7eae6'
-    },
+    // 'p, h1, small, footer': {
+    //   color: '#e7eae6'
+    // },
     'a': {
       // color: '#bb86fc',
       // color: '#03dac6',
-      color: '#03f193',
+      // color: '#03f193',
       // color: '#cf6679', //red
       boxShadow: 'none'
     }

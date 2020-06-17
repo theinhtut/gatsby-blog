@@ -1,0 +1,22 @@
+.dark-switcher--dark, .dark-switcher--light {
+  margin-top: 10px;
+  border-radius: .8em;
+  cursor: pointer;
+  padding: .3em .8em;
+  text-decoration: none;
+}
+.dark-switcher--dark {
+  color: #2a2b2d;
+  background: #fff;
+  border: solid 1.2px #2a2b2d;
+  transition: all 0.6s ease;
+}
+.dark-switcher--light {
+  color: #fff;
+  background: #2a2b2d;
+  border: solid 1.2px #fff;
+  transition: all 0.6s ease;
+}
+button:focus {
+  outline: 0;
+}
